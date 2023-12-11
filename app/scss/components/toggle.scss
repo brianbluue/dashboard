@@ -5,47 +5,34 @@
 .toggle {
  
   display: grid;
-  grid-template-columns: 1fr rem(60) 1fr;
+  grid-template-columns: 1fr 3rem;
   border: none;
   gap: rem(4.8) rem(12);
   margin: 0;
  
 
-  label {
+  label{
     font-size: rem(14);
     font-weight: 700;
     color: var(--toggle);
-    align-self: center;
+    grid-column: 1 / 2;
 
-    &[for='dark'] {
-      grid-column: 1 / 2;
-      justify-self: end;
-       
-    }
-    &[for='system'] {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-      justify-self: center;
-      align-self: start;
-      
-       
-    }
-    &[for='light'] {
-      grid-column: 3 / 4;
-      
-       
-    }
+    &[for="dark"]{
+     
+    line-height: rem(24);
+    margin-right: rem(13);
+
+     
   }
 
   &__wrapper {
     height: rem(24);
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
     position: relative;
     
   }
 
-  input[type='radio'] {
+  input[type='radio']{
     margin: 0 rem(-2) 0 rem(-2);
     opacity: 0;
     width: rem(24);
@@ -99,3 +86,4 @@
     transform: translate(-50%);
   }
 }
+

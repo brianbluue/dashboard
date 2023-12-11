@@ -22,16 +22,13 @@
     
     <fieldset aria-label="theme toggle" role="radiogroup" class="header__toggle toggle" >  
       
-      <label for="dark" >Dark</label>      
-      <label for="system">System Pref</label>
-      <label for="light">Light</label>
+      <label for="dark">Dark</label>      
       <div class="toggle__wrapper">
         
         <input type="radio" name="theme" id="dark">
-        <input type="radio" name="theme" id="system" checked>
         <input type="radio" name="theme" id="light" >
         <span aria-hidden="true" class="toggle__background"></span>
-        <span aria-hidden="true" class="toggle__button"> </span>
+        <span aria-hidden="true" class="toggle__button"></span>
         
       </div>
   </fieldset>
@@ -39,7 +36,8 @@
   </header>
 
   <main> <!------------Main Cards Section------------------------------->
-    <section class="container card-grid">
+    <section class="container cards">
+
       <div class="card card--facebook">
         <div class="card__platform">
           <img src="/images/icon-facebook.svg"  class="card__icon" alt="Facebook">  
@@ -85,6 +83,70 @@
         </div>
 
       </div>
+      <div class="card card--tiktok">
+        <div class="card__platform">
+          <img src="/images/icon-tiktok.svg"  class="card__icon" alt="Tiktok">  
+          <div class="card__username">@brianbluue</div>
+        </div>
+        <div class="card__followers">
+        <div class="card__count card__count--big"> 8239 </div>
+          <div class="card__label">Followers</div>
+        </div>
+        <div class="card__change card__change--down">
+          <img src="images/icon-down.svg" alt="down-arrow">
+          <div class="card__number">144 Today</div> 
+
+        </div>
+
+      </div>
+      <div class="card card--threads">
+        <div class="card__platform">
+          <img src="/images/icon-threads.svg"  class="card__icon" alt="Threads">  
+          <div class="card__username">@brianbluue</div>
+        </div>
+        <div class="card__followers">
+        <div class="card__count card__count--big"> 8239 </div>
+          <div class="card__label">Followers</div>
+        </div>
+        <div class="card__change card__change--down">
+          <img src="images/icon-down.svg" alt="down-arrow">
+          <div class="card__number">144 Today</div> 
+
+        </div>
+
+      </div>
+      <div class="card card--youtube">
+        <div class="card__platform">
+          <img src="/images/icon-spotify.svg"  class="card__icon" alt="Spotify">  
+          <div class="card__username">@brianbluue</div>
+        </div>
+        <div class="card__followers">
+        <div class="card__count card__count--big"> 8239 </div>
+          <div class="card__label">Followers</div>
+        </div>
+        <div class="card__change card__change--down">
+          <img src="images/icon-down.svg" alt="down-arrow">
+          <div class="card__number">144 Today</div> 
+
+        </div>
+
+      </div>
+      <div class="card card--reddit">
+        <div class="card__platform">
+          <img src="/images/icon-reddit.svg"  class="card__icon" alt="Reddit">  
+          <div class="card__username">@brianbluue</div>
+        </div>
+        <div class="card__followers">
+        <div class="card__count card__count--big"> 8239 </div>
+          <div class="card__label">Followers</div>
+        </div>
+        <div class="card__change card__change--down">
+          <img src="images/icon-down.svg" alt="down-arrow">
+          <div class="card__number">144 Today</div> 
+
+        </div>
+
+      </div>
       <div class="card card--youtube">
         <div class="card__platform">
           <img src="/images/icon-youtube.svg"  class="card__icon" alt="Youtube">  
@@ -101,7 +163,7 @@
         </div>
 
       </div>
-      <div></div>
+      
 
        
     </section>
@@ -111,89 +173,106 @@
     <section class="container">
       <h2>Overview - Today</h2>
       <div class="cards">
-        <div class="card">
+        <div class="card card-grid">
+          <div class="card__subtitle">Page Views</div>
 
-          <div>Page Views</div>
-          <div><img src="/images/icon-facebook.svg"  class="card__icon" alt="Facebook"></div>
-          <div>87</div>
-          <div>3%</div>
+       
+          <img src="/images/icon-facebook.svg" alt="Facebook">
+          <div class="card__count card__count--small">87</div>
+          <div class="card__change card__change--up"> 
+            <img src="images/icon-up.svg" alt="up-arrow"> 
+            <div class="card__number">3% </div>
+          </div>
+
+        </div> 
+        <div class="card card-grid">
+          <div class="card__subtitle">Likes</div>
+
+       
+          <img src="/images/icon-facebook.svg" alt="Facebook">
+          <div class="card__count card__count--small">52</div>
+          <div class="card__change card__change--down"> 
+            <img src="images/icon-down.svg" alt="down-arrow"> 
+            <div class="card__number">2% </div>
+          </div>
+
+        </div> 
+        <div class="card card-grid">
+          <div class="card__subtitle">Likes</div>
+
+       
+          <img src="/images/icon-instagram.svg" alt="Instagram">
+          <div class="card__count card__count--small">5462</div>
+          <div class="card__change card__change--up"> 
+            <img src="images/icon-up.svg" alt="up-arrow"> 
+            <div class="card__number">2257% </div>
+          </div>
+
+        </div> 
+        <div class="card card-grid">
+          <div class="card__subtitle">Profile Views</div>
+
+       
+          <img src="/images/icon-instagram.svg" alt="Instagram">
+          <div class="card__count card__count--small">52K</div>
+          <div class="card__change card__change--up"> 
+            <img src="images/icon-up.svg" alt="up-arrow"> 
+            <div class="card__number">1375% </div>
+          </div>
+
+        </div> 
+        <div class="card card-grid">
+          <div class="card__subtitle">Retweets</div>
+
+       
+          <img src="/images/icon-twitter.svg" alt="Twitter">
+          <div class="card__count card__count--small">117</div>
+          <div class="card__change card__change--up"> 
+            <img src="images/icon-up.svg" alt="up-arrow"> 
+            <div class="card__number">3% </div>
+          </div>
+
+        </div> 
+        <div class="card card-grid">
+          <div class="card__subtitle">Likes</div>
+
+       
+          <img src="/images/icon-twitter.svg" alt="Twitter">
+          <div class="card__count card__count--small">87</div>
+          <div class="card__change card__change--up"> 
+            <img src="images/icon-up.svg" alt="up-arrow"> 
+            <div class="card__number">563% </div>
+          </div>
+
+        </div> 
+        <div class="card card-grid">
+          <div class="card__subtitle">Likes</div>
+
+       
+          <img src="/images/icon-youtube.svg" alt="Youtube">
+          <div class="card__count card__count--small">87</div>
+          <div class="card__change card__change--down"> 
+            <img src="images/icon-down.svg" alt="down-arrow"> 
+            <div class="card__number">19% </div>
+          </div>
+
+        </div> 
+        <div class="card card-grid">
+          <div class="card__subtitle">Total Views</div>
+
+       
+          <img src="/images/icon-youtube.svg" alt="Youtube">
+          <div class="card__count card__count--small">1407</div>
+          <div class="card__change card__change--down"> 
+            <img src="images/icon-down.svg" alt="down-arrow"> 
+            <div class="card__number">12% </div>
+          </div>
 
         </div> 
 
       </div>
 
-    </section>
-    
-    
-
-    Dark Mode
-  
-    
-  
-    
-   
-    
-    
-  
-    
-    1044
-    Followers
-    99 Today
-  
-    @realnathanf
-    11k
-    Followers
-    1099 Today
-  
-    Nathan F.
-    8239
-    Subscribers
-    144 Today
-  
-  
-  
-    Overview - Today
-  
-    Page Views
-    87
-    3%
-  
-    Likes
-    52
-    2%
-  
-    Likes
-    5462
-    2257%
-  
-    Profile Views
-    52k
-    1375%
-  
-    Retweets
-    117
-    303%
-  
-    Likes
-    507
-    553%
-  
-    Likes
-    107
-    19%
-  
-    Total Views
-    1407
-    12%
-
-
-  </main>
-
-  
-
-  
-
-  
+    </section>    
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Brian Blueeeeee.</a>

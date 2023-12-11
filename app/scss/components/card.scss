@@ -1,5 +1,22 @@
 @use '../utilities' as *;
 
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(30);
+    
+
+    
+  
+    @include breakpoint(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    @include breakpoint(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
 .card {
 
     background: var(--dark-card);
@@ -9,6 +26,13 @@
     border-radius: rem(5);
     position: relative;
     overflow: hidden;
+    transition: background 150ms ease-in-out;
+    cursor: pointer;
+
+
+    &:hover {
+        background: var(--dark-card-hover);
+    }
 
     &--facebook {
         border-top: rem(5) solid var(--facebook);
@@ -56,6 +80,11 @@
 
     }
 
+    &__subtitle {
+        font-size: rem(14);
+        font-weight: 700;
+    }
+
 
     &__icon {
 
@@ -92,6 +121,8 @@
 
         }
         &--small { 
+            font-size: rem(32);
+            font-weight: 700;
 
         }
     }
