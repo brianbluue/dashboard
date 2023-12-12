@@ -28,7 +28,7 @@
     --light-text2: hsl(230, 17%, 14%);
     --spotify: hsl(141, 76%, 48%);
     --reddit: hsl(16, 100%, 50%);
-    --tiktok:hsl(0, 0%, 100%);
+    --tiktok:hsl(178, 100%, 47%);
     
 
 
@@ -43,7 +43,36 @@
     --toggle-button: var(--toggle-button-light);
 }
 @media (prefers-color-scheme: dark) {
-    :root {
+     :root {
+        --background: var(--dark-bg);
+        --text-color: var(--dark-text2);
+        --text-color2: var(--dark-text2);
+        --card-bg: var(--dark-card);
+        --card-hover: var(--dark-card-hover);
+        --top-bg: var(--dark-top-bg);
+        --toggle: var(--light-bg);
+        --toggle-bg: linear-gradient(225deg, var(--toggle-bg-end)0%, var(--toggle-bg-start)98.02%);
+        --toggle-button: var(--dark-bg);
+
+    }
+}
+
+body.light {
+    --background: var(--light-bg);
+    --text-color: var(--light-text1);
+    --text-color2: var(--light-text2);
+    --card-bg: var(--light-card);
+    --card-hover: var(--light-card-hover);
+    --top-bg: var(--light-top-bg);
+    --toggle: var(--toggle-light);
+    --toggle-bg: var(--toggle-bg-light);
+    --toggle-button: var(--toggle-button-light);
+
+
+}
+
+body.dark{
+
         --background: var(--dark-bg);
         --text-color: var(--dark-text2);
         --text-color2: var(--dark-text2);
@@ -55,9 +84,7 @@
         --toggle-button: var(--dark-bg);
 
 
-
-        
-
-    }
 }
+
+
  

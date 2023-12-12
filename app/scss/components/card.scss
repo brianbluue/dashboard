@@ -32,71 +32,76 @@
 
     &:hover {
         background: var(--card-hover);
+        transform: scale(1.1) ;
+
+        
     }
 
     &--facebook {
         border-top: rem(5) solid var(--facebook);
+        
+        &:hover {
+            border: rem(1) solid var(--facebook);
+            box-shadow: 0 0 rem(10) var(--facebook);
+        }
             
     }
     &--twitter {
         border-top: rem(5) solid var(--twitter);
+
+        &:hover {
+            border: rem(1) solid var(--twitter);
+            box-shadow: 0 0 rem(10) var(--twitter);
+        }
     }
     &--spotify {
         border-top: rem(5) solid var(--spotify);
+        &:hover {
+            border: rem(1) solid var(--spotify);
+            box-shadow: 0 0 rem(10) var(--spotify);
+        }
     }
     &--reddit {
         border-top: rem(5) solid var(--reddit);
+        &:hover {
+            border: rem(1) solid var(--reddit);
+            box-shadow: 0 0 rem(10) var(--reddit);
+        }
 
     }
     &--tiktok {
         border-top: rem(5) solid var(--tiktok);
+        &:hover {
+            border: rem(1) solid var(--tiktok);
+            box-shadow: 0 0 rem(10) var(--tiktok);
+        }
 
     }
     &--instagram {
-        padding-top: rem(30);
-
-        &::before {
-            content: "";
-            position: absolute;
-            display: block;
-            left: 0;
-            top: 0;
-            height: rem(5);
-            width: 100%;
-            background: linear-gradient(
-                225deg, 
-                var(--instagram-end), 
-                var(--instagram-middle) 50.91%, 
-                var(--instagram-start) 100%);
-            
-            
+        border-top: rem(5) solid var(--instagram-middle);
+           
+        &:hover {
+            border: rem(1) solid var(--instagram-middle);
+            box-shadow: 0 0 rem(10) var(--instagram-end);
+        
         }
     }
-       // border-top: rem(5) solid var(--instagram);
     &--threads {
-        padding-top: rem(30);
+        border-top: rem(5) solid var(--instagram-end);
 
-        &::before {
-            content: "";
-            position: absolute;
-            display: block;
-            left: 0;
-            top: 0;
-            height: rem(5);
-            width: 100%;
-            background: linear-gradient(
-                225deg, 
-                var(--instagram-end), 
-                var(--instagram-middle) 50.91%, 
-                var(--instagram-start) 100%);
-            
-            
+        &:hover {
+            border: rem(1) solid var(--instagram-middle);
+            box-shadow: 0 0 rem(10) var(--instagram-end);
         }
-       // border-top: rem(5) solid var(--instagram);
+
 
     }
     &--youtube {
         border-top: rem(5) solid var(--youtube);
+        &:hover {
+            border: rem(1) solid var(--youtube);
+            box-shadow: 0 0 rem(10) var(--youtube);
+        }
     }
 
     img {
