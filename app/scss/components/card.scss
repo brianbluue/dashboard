@@ -19,8 +19,8 @@
 
 .card {
 
-    background: var(--dark-card);
-    color: --dark-text1;
+    background: var(--card-bg);
+    color: --text-color;
     text-align: center;
     padding: rem(25);
     border-radius: rem(5);
@@ -31,7 +31,7 @@
 
 
     &:hover {
-        background: var(--dark-card-hover);
+        background: var(--card-hover);
     }
 
     &--facebook {
@@ -40,9 +40,40 @@
     }
     &--twitter {
         border-top: rem(5) solid var(--twitter);
+    }
+    &--spotify {
+        border-top: rem(5) solid var(--spotify);
+    }
+    &--reddit {
+        border-top: rem(5) solid var(--reddit);
+
+    }
+    &--tiktok {
+        border-top: rem(5) solid var(--tiktok);
 
     }
     &--instagram {
+        padding-top: rem(30);
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            height: rem(5);
+            width: 100%;
+            background: linear-gradient(
+                225deg, 
+                var(--instagram-end), 
+                var(--instagram-middle) 50.91%, 
+                var(--instagram-start) 100%);
+            
+            
+        }
+    }
+       // border-top: rem(5) solid var(--instagram);
+    &--threads {
         padding-top: rem(30);
 
         &::before {
@@ -66,6 +97,11 @@
     }
     &--youtube {
         border-top: rem(5) solid var(--youtube);
+    }
+
+    img {
+        max-width: rem(20);
+        max-height: rem(20);
     }
 
 
@@ -110,7 +146,7 @@
 
     }
     &__count {
-        color: var(--light-bg);
+        color: var(--text-color);
         letter-spacing: rem(-2);
         line-height: 1;
         margin-bottom: rem(4);
@@ -127,7 +163,7 @@
         }
     }
     &__label {
-        color: var(--dark-text1);
+        color: var(--toggle);
         text-transform: uppercase;
         font-size: rem(12);
         font-weight: 400;
