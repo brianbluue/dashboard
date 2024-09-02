@@ -1,4 +1,5 @@
-![dark-light site](https://github.com/user-attachments/assets/1c6095c4-b706-4d4a-b1c1-425f356108f6)
+![dark-light site](https://github.com/user-attachments/assets/52a59fd2-8a41-410a-a062-840b672ff49c)
+
 
 #..............................................Custom Social Media Dashboard Page...............#
 
